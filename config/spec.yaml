@@ -1,0 +1,33 @@
+# Template specification: the single source of truth for the workbook layout.
+# Changing the year range here and re-running `build` / `extend` is how a new
+# survey cycle is prepared; no cell is moved by hand.
+
+template_version: "2027.1"
+first_year: 2019
+last_year: 2026
+
+levels:            # education levels collected in the template (codes are stable, labels are translated)
+  - L1             # primary
+  - L2             # lower secondary
+  - L3             # upper secondary
+
+sexes: [F, M]      # disaggregation entered by countries; T (total) is entered too and checked
+ages: {min: 3, max: 24}
+
+# Levels for which enrolment by single age is requested
+age_levels: [L1, L2]
+
+expenditure_items:
+  - GOV_TOTAL      # total government expenditure (all sectors)
+  - GOV_EDU        # government expenditure on education
+  - GDP            # gross domestic product
+
+# Thresholds used by the validation rules (kept here, not in code, so they can be
+# reviewed with the methodology team)
+thresholds:
+  total_tolerance: 0          # |T - (F+M)| allowed
+  yoy_change_warning: 0.30    # relative year-on-year change that triggers a warning
+  cohort_ratio: [0.85, 1.15]  # pop(age a+1, t+1) / pop(age a, t)
+  ger_max: 150                # gross enrolment ratio above this is flagged
+  gpi_range: [0.5, 1.5]
+  ptr_range: [5, 100]

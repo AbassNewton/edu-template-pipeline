@@ -1,0 +1,7 @@
+openpyxl>=3.1
+pandas>=2.0
+numpy
+pyyaml
+matplotlib
+streamlit>=1.30
+pytest

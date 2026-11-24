@@ -1,0 +1,249 @@
+# User-facing labels, one entry per language. Every key must exist in every
+# language (enforced by tests/test_labels.py). Codes in column A of the
+# workbook are never translated, so all language versions parse identically.
+# Demo translations: in production they would be reviewed by UIS translators.
+
+en:
+  sheet:
+    instructions: Instructions
+    parameters: Parameters
+    enrolment: Enrolment
+    enrolment_age: Enrolment by age
+    population: Population
+    teachers: Teachers
+    expenditure: Expenditure
+    indicators: Indicators
+    checks: Checks
+    metadata: Metadata
+  header: {code: Code, series: Series, dimension: Breakdown, value: Value, source: Source, note: Note, status: Status}
+  sex: {F: Female, M: Male, T: Total}
+  level: {L1: Primary, L2: Lower secondary, L3: Upper secondary}
+  series:
+    ENR: Enrolment
+    ENRA: Enrolment by age
+    POP: Population
+    TCH: Teachers
+    GOV_TOTAL: Total government expenditure
+    GOV_EDU: Government expenditure on education
+    GDP: Gross domestic product
+    GER: Gross enrolment ratio (%)
+    GPI: Gender parity index of the GER
+    PTR: Pupil-teacher ratio
+    XGOV: Education expenditure as % of total government expenditure
+    XGDP: Education expenditure as % of GDP
+  param:
+    country_code: Country code (ISO 3166 alpha-3)
+    country_name: Country name
+    currency: National currency
+    respondent: Respondent
+    entry_age: Official entry age
+    duration: Duration (years)
+  check:
+    total_vs_sum: Total minus (female + male)
+    age_vs_total: Sum by age minus total enrolment
+    negatives: Number of negative values
+    ok: OK
+    review: Review
+  text:
+    title: Education survey - multi-year template
+    line1: Enter data in the white cells only. Grey cells are calculated.
+    line2: Leave a cell empty when data are not available; do not enter zero for missing data.
+    line3: Check the 'Checks' sheet before submitting. Any 'Review' flag should be corrected or explained in 'Metadata'.
+    version: Template version
+    language: Language
+
+fr:
+  sheet:
+    instructions: Instructions
+    parameters: Paramètres
+    enrolment: Effectifs
+    enrolment_age: Effectifs par âge
+    population: Population
+    teachers: Enseignants
+    expenditure: Dépenses
+    indicators: Indicateurs
+    checks: Contrôles
+    metadata: Métadonnées
+  header: {code: Code, series: Série, dimension: Ventilation, value: Valeur, source: Source, note: Note, status: Statut}
+  sex: {F: Filles, M: Garçons, T: Total}
+  level: {L1: Primaire, L2: Premier cycle du secondaire, L3: Second cycle du secondaire}
+  series:
+    ENR: Effectifs scolarisés
+    ENRA: Effectifs par âge
+    POP: Population
+    TCH: Enseignants
+    GOV_TOTAL: Dépenses publiques totales
+    GOV_EDU: Dépenses publiques d'éducation
+    GDP: Produit intérieur brut
+    GER: Taux brut de scolarisation (%)
+    GPI: Indice de parité entre les sexes du TBS
+    PTR: Ratio élèves-enseignant
+    XGOV: Dépenses d'éducation en % des dépenses publiques totales
+    XGDP: Dépenses d'éducation en % du PIB
+  param:
+    country_code: Code pays (ISO 3166 alpha-3)
+    country_name: Nom du pays
+    currency: Monnaie nationale
+    respondent: Répondant
+    entry_age: Âge officiel d'entrée
+    duration: Durée (années)
+  check:
+    total_vs_sum: Total moins (filles + garçons)
+    age_vs_total: Somme par âge moins effectif total
+    negatives: Nombre de valeurs négatives
+    ok: OK
+    review: À vérifier
+  text:
+    title: Enquête sur l'éducation - questionnaire pluriannuel
+    line1: Saisir les données uniquement dans les cellules blanches. Les cellules grises sont calculées.
+    line2: Laisser la cellule vide si la donnée n'est pas disponible ; ne pas saisir zéro pour une donnée manquante.
+    line3: Consulter la feuille « Contrôles » avant l'envoi. Tout signal « À vérifier » doit être corrigé ou expliqué dans « Métadonnées ».
+    version: Version du questionnaire
+    language: Langue
+
+es:
+  sheet:
+    instructions: Instrucciones
+    parameters: Parámetros
+    enrolment: Matrícula
+    enrolment_age: Matrícula por edad
+    population: Población
+    teachers: Docentes
+    expenditure: Gasto
+    indicators: Indicadores
+    checks: Controles
+    metadata: Metadatos
+  header: {code: Código, series: Serie, dimension: Desglose, value: Valor, source: Fuente, note: Nota, status: Estado}
+  sex: {F: Mujeres, M: Hombres, T: Total}
+  level: {L1: Primaria, L2: Secundaria baja, L3: Secundaria alta}
+  series:
+    ENR: Matrícula
+    ENRA: Matrícula por edad
+    POP: Población
+    TCH: Docentes
+    GOV_TOTAL: Gasto público total
+    GOV_EDU: Gasto público en educación
+    GDP: Producto interno bruto
+    GER: Tasa bruta de matrícula (%)
+    GPI: Índice de paridad de género de la TBM
+    PTR: Ratio alumnos por docente
+    XGOV: Gasto en educación como % del gasto público total
+    XGDP: Gasto en educación como % del PIB
+  param:
+    country_code: Código de país (ISO 3166 alfa-3)
+    country_name: Nombre del país
+    currency: Moneda nacional
+    respondent: Encuestado
+    entry_age: Edad oficial de ingreso
+    duration: Duración (años)
+  check:
+    total_vs_sum: Total menos (mujeres + hombres)
+    age_vs_total: Suma por edad menos matrícula total
+    negatives: Número de valores negativos
+    ok: OK
+    review: Revisar
+  text:
+    title: Encuesta de educación - plantilla plurianual
+    line1: Introduzca datos solo en las celdas blancas. Las celdas grises se calculan.
+    line2: Deje la celda vacía si el dato no está disponible; no introduzca cero para un dato faltante.
+    line3: Revise la hoja 'Controles' antes del envío. Toda alerta 'Revisar' debe corregirse o explicarse en 'Metadatos'.
+    version: Versión de la plantilla
+    language: Idioma
+
+pt:
+  sheet:
+    instructions: Instruções
+    parameters: Parâmetros
+    enrolment: Matrículas
+    enrolment_age: Matrículas por idade
+    population: População
+    teachers: Professores
+    expenditure: Despesa
+    indicators: Indicadores
+    checks: Verificações
+    metadata: Metadados
+  header: {code: Código, series: Série, dimension: Desagregação, value: Valor, source: Fonte, note: Nota, status: Estado}
+  sex: {F: Feminino, M: Masculino, T: Total}
+  level: {L1: Ensino primário, L2: Primeiro ciclo do secundário, L3: Segundo ciclo do secundário}
+  series:
+    ENR: Matrículas
+    ENRA: Matrículas por idade
+    POP: População
+    TCH: Professores
+    GOV_TOTAL: Despesa pública total
+    GOV_EDU: Despesa pública em educação
+    GDP: Produto interno bruto
+    GER: Taxa bruta de escolarização (%)
+    GPI: Índice de paridade de género da TBE
+    PTR: Rácio alunos por professor
+    XGOV: Despesa em educação em % da despesa pública total
+    XGDP: Despesa em educação em % do PIB
+  param:
+    country_code: Código do país (ISO 3166 alfa-3)
+    country_name: Nome do país
+    currency: Moeda nacional
+    respondent: Respondente
+    entry_age: Idade oficial de entrada
+    duration: Duração (anos)
+  check:
+    total_vs_sum: Total menos (feminino + masculino)
+    age_vs_total: Soma por idade menos matrículas totais
+    negatives: Número de valores negativos
+    ok: OK
+    review: Rever
+  text:
+    title: Inquérito sobre educação - modelo plurianual
+    line1: Introduza dados apenas nas células brancas. As células cinzentas são calculadas.
+    line2: Deixe a célula vazia se o dado não estiver disponível; não introduza zero para um dado em falta.
+    line3: Consulte a folha 'Verificações' antes de enviar. Qualquer alerta 'Rever' deve ser corrigido ou explicado em 'Metadados'.
+    version: Versão do modelo
+    language: Idioma
+
+ru:
+  sheet:
+    instructions: Инструкции
+    parameters: Параметры
+    enrolment: Контингент
+    enrolment_age: Контингент по возрасту
+    population: Население
+    teachers: Учителя
+    expenditure: Расходы
+    indicators: Показатели
+    checks: Проверки
+    metadata: Метаданные
+  header: {code: Код, series: Ряд, dimension: Разбивка, value: Значение, source: Источник, note: Примечание, status: Статус}
+  sex: {F: Женщины, M: Мужчины, T: Всего}
+  level: {L1: Начальное образование, L2: Основное общее (первая ступень среднего), L3: Среднее общее (вторая ступень среднего)}
+  series:
+    ENR: Контингент учащихся
+    ENRA: Контингент по возрасту
+    POP: Население
+    TCH: Учителя
+    GOV_TOTAL: Общие государственные расходы
+    GOV_EDU: Государственные расходы на образование
+    GDP: Валовой внутренний продукт
+    GER: Валовой коэффициент охвата (%)
+    GPI: Индекс гендерного паритета ВКО
+    PTR: Число учащихся на одного учителя
+    XGOV: Расходы на образование в % от общих государственных расходов
+    XGDP: Расходы на образование в % от ВВП
+  param:
+    country_code: Код страны (ISO 3166 alpha-3)
+    country_name: Название страны
+    currency: Национальная валюта
+    respondent: Респондент
+    entry_age: Официальный возраст поступления
+    duration: Продолжительность (лет)
+  check:
+    total_vs_sum: Всего минус (женщины + мужчины)
+    age_vs_total: Сумма по возрастам минус общий контингент
+    negatives: Число отрицательных значений
+    ok: OK
+    review: Проверить
+  text:
+    title: Обследование в области образования - многолетний шаблон
+    line1: Вводите данные только в белые ячейки. Серые ячейки рассчитываются автоматически.
+    line2: Оставьте ячейку пустой, если данные отсутствуют; не вводите ноль вместо отсутствующих данных.
+    line3: Перед отправкой проверьте лист «Проверки». Каждый флаг «Проверить» нужно исправить или пояснить в листе «Метаданные».
+    version: Версия шаблона
+    language: Язык
